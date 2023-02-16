@@ -14,6 +14,9 @@ sphinx:
 #  configuration: mkdocs.yml
 
 # Optionally build your docs in additional formats such as PDF
+build:
+  os: "ubuntu-20.04"
+
 formats:
   - pdf
   - epub
