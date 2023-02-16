@@ -20,5 +20,3 @@ Contents
 
    usage
    api
-
-记录自己学习JAVA的笔记。
