@@ -18,7 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
 ]
-extensions = ["myst_parser"]
+
 #######################
 # source_suffix = '.rst'
 # from recommonmark.parser import CommonMarkParser
