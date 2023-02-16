@@ -1,0 +1,213 @@
+# 第一章 Java语言概述![截图 2022-12-10 12-31-48](/home/dfuttu/Documents/Notes/Figures/截图 2022-12-10 12-31-48.png)
+
+## 1.1 软件开发介绍
+
+### 软件开发
+
+软件，即一系列按照特定顺序组织的计算机数据和指令的集合。有系统软件和应用软件之分。
+
+### 人机交互方式
+
+- 图形化界面(Graphical User Interface **GUI**)：方式简单直观，使用者易于接受，容易上手操作。
+
+- 命令行方式(Command Line Interface **CLI**)：需要有一个控制台，输入特定的指令，让计算机完成一些操作。较为麻烦，需要记录住一些命令。
+
+### 常用的DOS命令
+
+- dir: 列出当前目录下的文件以及文件夹
+- md: 创建目录
+- rd: 删除空目录
+- cd: 进入指定目录
+- cd..: 退回到上一级目录
+- cd\: 退回到根目录
+- del: 删除文件
+- exit: 退出 dos 命令行
+- echo javase>1.doc: 创建并写入文件
+
+## 1.2 计算机编程语言介绍
+
+计算机语言：人与计算机交流的方式。如果人要与计算机交流，那么就要学习计算机语言。
+计算机语言有很多种。如：C, C++, Java, PHP,  Kotlin, Python, Scala等。
+
+- **第一代语言**：机器语言。指令以二进制代码形式存在。
+
+- **第二代语言**：汇编语言。使用助记符表示一条机器指令。
+
+- **第三代语言**：高级语言。
+
+  ​    C、Pascal、Fortran面向过程的语言；
+
+  ​    C++面向过程/面向对象；
+
+  ​    Java跨平台的纯面向对象的语言；
+
+  ​    .NET跨语言的平台；Python、Scala…
+
+![Google的Android系统结构](/home/dfuttu/Documents/Notes/Figures/Google的Android系统结构.jpg)
+
+## 1.3 Java语言概述
+
+### Java技术体系平台
+
+- **Java SE(Java Standard Edition)标准版**：支持面向桌面级应用（如Windows下的应用程序）的Java平台，提供了完整的Java核心API，此版本以前称为J2SE
+- **Java EE(Java Enterprise Edition)企业版**：是为开发企业环境下的应用程序提供的一套解决方案。该技术体系中包含的技术如:Servlet 、Jsp等，主要针对于Web应用程序开发。版本以前称为J2EE
+- **Java ME(Java Micro Edition)小型版**：支持Java程序运行在移动终端（手机、PDA）上的平台，对Java API有所精简，并加入了针对移动终端的支持，此版本以前称为J2ME
+- **Java Card**：支持一些Java小程序（Applets）运行在小内存设备（如智能卡）上的平台
+
+### Java在各领域的应用
+
+从Java的应用领域来分，Java语言的应用方向主要表现在以下几个方面：
+
+- **企业级应用**：主要指复杂的大企业的软件系统、各种类型的网站。Java的安全机制以及它的跨平台的优势，使它在分布式系统领域开发中有广泛应用。应用领域包括金融、电信、交通、电子商务等。
+- **Android平台应用**：Android应用程序使用Java语言编写。Android开发水平的高低很大程度上取决于Java语言核心能力是否扎实。
+- **大数据平台开发**：各类框架有Hadoop，spark，storm，flink等，就这类技术生态圈来讲，还有各种中间件如flume，kafka，sqoop等等 ，这些框架以及工具大多数是用Java编写而成，但提供诸如Java，scala，Python，R等各种语言API供编程。
+- 移动领域应用：主要表现在消费和嵌入式领域，是指在各种小型设备上的应用，包括手机、PDA、机顶盒、汽车通信设备等。
+
+## 1.4 运行机制及运行过程
+
+### Java语言的特点
+
+- 特点一：**面向对象**
+   两个基本概念：类、对象
+   三大特性：封装、继承、多态
+- 特点二：**健壮性**
+   吸收了C/C++语言的优点，但去掉了其影响程序健壮性的部分（如指针、内存的申请与释放等），提供了一个相对安全的内存管理和访问机制
+- 特点三：**跨平台性**
+   跨平台性：通过Java语言编写的应用程序在不同的系统平台上都可以运行。“Write once , Run Anywhere”
+   原理：只要在需要运行 java 应用程序的操作系统上，先安装一个Java虚拟机 (JVM Java Virtual Machine) 即可。由JVM来负责Java程序在该系统中的运行。
+
+![image-20221210222123555](/home/dfuttu/Documents/Notes/Figures/image-20221210222123555.png)
+
+### Java两种核心机制
+
+- Java虚拟机 (Java Virtal Machine)
+- 垃圾收集机制 (Garbage Collection)
+
+## 1.5 Java的环境搭建
+
+### 什么是JDK、JRE
+
+- **JDK**(Java Development Kit Java开发工具包)
+  JDK是提供给Java开发人员使用的，其中包含了java的开发工具，也包括了JRE。所以安装了JDK，就不用在单独安装JRE了。
+   其中的开发工具：编译工具(javac.exe) 打包工具(jar.exe)等
+- **JRE**(Java Runtime Environment Java运行环境)
+  包括Java虚拟机(JVM Java Virtual Machine)和Java程序所需的核心类库等，如果想要运行一个开发好的Java程序，计算机中只需要安装JRE即可
+
+![Java8.0_platform](/home/dfuttu/Documents/Notes/Figures/Java8.0_platform-1670682622425-3.jpg)
+
+![JDK、JRE、JVM关系](/home/dfuttu/Documents/Notes/Figures/image-20221210223051627.png)
+
+### 下载并安装JDK
+
+官方网址：
+
+- www.oracle.com
+- https://mirrors.tuna.tsinghua.edu.cn/Adoptium/8/jdk/x64/
+
+#### ubuntu
+
+```bash
+apt list openjdk-8-jdk
+apt install openjdk-8-jdk
+java -version
+```
+
+#### windows
+
+
+
+## 1.6 开发体验—HelloWorld
+
+#### 编写
+
+```bash
+vim HelloWorld.java
+```
+
+```java
+class HelloChina{
+	public static void main(String[] args){
+		System.out.println("Hello, world!");
+	}
+}
+```
+
+#### 编译
+
+```bash
+javac HelloWorld.java
+ls
+```
+
+![image-20221210233621672](/home/dfuttu/Documents/Notes/Figures/image-20221210233621672.png)
+
+#### 运行
+
+```bash
+java HelloChina
+```
+
+![image-20221210233648661](/home/dfuttu/Documents/Notes/Figures/image-20221210233648661.png)
+
+## 1.7 注释(Comment)
+
+### 单行注释
+
+```java
+//
+```
+
+### 多行注释
+
+```java
+/*
+
+*/
+```
+
+- 对于单行和多行注释，被注释的文字，不会被JVM（java虚拟机）解释执行。
+- 多行注释里面不允许有多行注释嵌套。
+
+### 文档注释
+
+```java
+/**
+
+*/
+```
+
+注释内容可以被JDK提供的工具 javadoc 所解析，生成一套以网页文件形式体现的该程序的说明文档。
+
+## 1.8 Java API文档
+
+- API （Application Programming Interface,应用程序编程接口）是 Java 提供
+  的基本编程接口。
+- Java语言提供了大量的基础类，因此 Oracle 也为这些基础类提供了相应的
+  API文档，用于告诉开发者如何使用这些类，以及这些类里包含的方法。
+- 下载API：
+  http://www.oracle.com/technetwork/java/javase/downloads/index.html
+  Additional Resources-Java SE 8 Documentation下载。
+
+[Java Platform SE 8.chm](../Resources/尚硅谷宋红康Java核心基础/课件笔记源码资料/3_文档资料/API文档/Java Platform SE 8.chm)  
+
+[jdk api 1.8_google.CHM](../Resources/尚硅谷宋红康Java核心基础/课件笔记源码资料/3_文档资料/API文档/jdk api 1.8_google.CHM) 
+
+[JDK_API_1.6_zh_中文.CHM](../Resources/尚硅谷宋红康Java核心基础/课件笔记源码资料/3_文档资料/API文档/JDK_API_1.6_zh_中文.CHM) 
+
+## 1.9 常用的Java开发工具
+
+### 文本编辑工具
+
+- 记事本
+- UltraEdit
+- EditPlus
+- TextPad
+- NotePad
+
+### Java集成开发环境（IDE)
+
+- JBuilder
+- NetBeans
+- **Eclipse**
+- MyEclipse
+- **IntelliJ IDEA**
