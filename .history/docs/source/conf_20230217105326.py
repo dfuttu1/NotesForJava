@@ -4,7 +4,7 @@
 
 project = 'JavaNotes'
 copyright = '2022, dfuttu'
-author = 'dfuttu'
+author = 'Graziella'
 
 release = '0.1'
 version = '0.1.0'

@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'JavaNotes'
-copyright = '2022, dfuttu'
-author = 'dfuttu'
+copyright = '2022, Graziella'
+author = 'Graziella'
 
 release = '0.1'
 version = '0.1.0'
