@@ -1,4 +1,4 @@
-Welcome to dfuttu's documentation!
+Java Notes
 ===================================
 
 记录自己学习JAVA的笔记。
@@ -9,6 +9,4 @@ Contents
 
 .. toctree::
 
-   :maxdepth: 2
-   :caption: Contents:
-   README.md
+   chapter1
