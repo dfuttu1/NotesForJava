@@ -1,9 +1,7 @@
-Template for the Read the Docs tutorial
-=======================================
+Welcome to dfuttu's Java notes!
+===================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+记录自己学习JAVA的笔记。
 
-Read the tutorial here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Contents
