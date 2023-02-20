@@ -9,8 +9,7 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents
-
+   :caption: 第一章 Java语言概述
    chapter1.md
    chapter2.md
    chapter3.md

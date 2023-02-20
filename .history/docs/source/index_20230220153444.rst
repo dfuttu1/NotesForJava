@@ -1,0 +1,33 @@
+Welcome to dfuttu's Java notes!
+===================================
+
+记录自己学习JAVA的笔记。
+
+
+Contents
+--------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 第一章 Java语言概述
+   chapter1.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 第一章 Java语言概述
+   chapter2.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 第一章 Java语言概述
+   chapter3.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 第一章 Java语言概述
+   chapter4.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 第一章 Java语言概述
+   chapter5.md
