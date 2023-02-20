@@ -9,7 +9,7 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
    chapter1.md
    chapter2.md
